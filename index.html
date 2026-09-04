@@ -258,7 +258,10 @@
 
             <div class="contact-form">
                 <h3>Оставить заявку</h3>
-                <form action="#" method="post" data-netlify="true" novalidate>
+                <form name="contact" netlify netlify-honeypot="bot-field" novalidate>
+                    <p class="hidden" style="display:none;">
+                        <label>Не заполняйте это поле: <input name="bot-field"></label>
+                    </p>
                     <input type="hidden" name="form-name" value="contact">
                     <div class="form-group">
                         <label for="name">Ваше имя</label>
