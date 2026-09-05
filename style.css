@@ -1367,3 +1367,256 @@ body.light-theme .scroll-top:hover {
         right: 16px;
     }
 }
+/* ============================================
+   КОНТАКТЫ В ШАПКЕ
+   ============================================ */
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e8e4de;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-phone i {
+    color: #c9a84c;
+    font-size: 14px;
+}
+
+.header-phone:hover {
+    color: #c9a84c;
+}
+
+.header-email {
+    color: rgba(232, 228, 222, 0.5);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header-email:hover {
+    color: #c9a84c;
+}
+
+/* ============================================
+   КРУПНЫЕ КНОПКИ-ССЫЛКИ (СВЯЖИТЕСЬ С НАМИ)
+   ============================================ */
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 28px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.contact-btn i {
+    font-size: 28px;
+    margin-bottom: 4px;
+    color: #c9a84c;
+}
+
+.contact-btn span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e8e4de;
+}
+
+.contact-btn small {
+    font-size: 13px;
+    opacity: 0.6;
+    color: rgba(232, 228, 222, 0.5);
+}
+
+.contact-btn:hover {
+    transform: translateY(-4px);
+    border-color: rgba(201, 168, 76, 0.3);
+    background: rgba(201, 168, 76, 0.04);
+}
+
+/* ============================================
+   ФУТЕР С ИКОНКАМИ СОЦСЕТЕЙ И ДОКУМЕНТАМИ
+   ============================================ */
+
+.footer {
+    text-align: center;
+    padding: 40px 20px 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-socials a {
+    color: rgba(232, 228, 222, 0.3);
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #c9a84c;
+    transform: translateY(-2px);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: rgba(232, 228, 222, 0.25);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.footer-links a:hover {
+    color: #c9a84c;
+}
+
+.footer p {
+    color: rgba(232, 228, 222, 0.12);
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   СВЕТЛАЯ ТЕМА
+   ============================================ */
+
+body.light-theme .header-phone {
+    color: #1a1a1e;
+}
+
+body.light-theme .header-email {
+    color: rgba(26, 26, 30, 0.4);
+}
+
+body.light-theme .header-email:hover {
+    color: #a07c2e;
+}
+
+body.light-theme .contact-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(26, 26, 30, 0.06);
+}
+
+body.light-theme .contact-btn i {
+    color: #a07c2e;
+}
+
+body.light-theme .contact-btn span {
+    color: #1a1a1e;
+}
+
+body.light-theme .contact-btn small {
+    color: rgba(26, 26, 30, 0.4);
+}
+
+body.light-theme .contact-btn:hover {
+    background: #ffffff;
+    border-color: rgba(160, 124, 46, 0.15);
+}
+
+body.light-theme .footer-socials a {
+    color: rgba(26, 26, 30, 0.2);
+}
+
+body.light-theme .footer-socials a:hover {
+    color: #a07c2e;
+}
+
+body.light-theme .footer-links a {
+    color: rgba(26, 26, 30, 0.2);
+}
+
+body.light-theme .footer-links a:hover {
+    color: #a07c2e;
+}
+
+body.light-theme .footer {
+    border-top-color: rgba(26, 26, 30, 0.06);
+}
+
+body.light-theme .footer p {
+    color: rgba(26, 26, 30, 0.15);
+}
+
+/* ============================================
+   АДАПТИВ
+   ============================================ */
+
+@media (max-width: 768px) {
+    .header-phone span {
+        display: none;
+    }
+    .contact-buttons {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-links {
+        gap: 16px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-contacts {
+        gap: 10px;
+    }
+    .header-phone span {
+        display: none;
+    }
+    .contact-buttons {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .contact-btn {
+        padding: 20px 12px;
+    }
+    .contact-btn i {
+        font-size: 22px;
+    }
+    .contact-btn span {
+        font-size: 14px;
+    }
+    .contact-btn small {
+        font-size: 11px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 6px;
+        font-size: 12px;
+    }
+}

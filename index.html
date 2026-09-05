@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ===== SEO ===== -->
-    <title>YaKa.SPEECH — студия веб-разработки. Создаём сайты, которые продают.</title>
-    <meta name="description" content="Разработка сайтов под ключ: лендинги, интернет-магазины, корпоративные сайты. Индивидуальный дизайн, адаптация под любые устройства. Работаем по всей России.">
+   <title>YaKa.SPEECH — Разработка сайтов под ключ. Сайты, которые продают.</title>
+<meta name="description" content="Создаём лендинги, интернет-магазины и корпоративные сайты. Индивидуальный дизайн, адаптивность, SEO-база. Работаем по всей России. Гарантия 30 дней. Узнайте стоимость за 1 день!">
 
-    <!-- ===== FAVICON ===== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#c9a84c">
-    <meta name="msapplication-TileColor" content="#0b0b0e">
-    <meta name="theme-color" content="#0b0b0e">
+   <!-- ===== FAVICON ===== -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="120x120" href="favicon-120x120.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#0b0b0e">
+<meta name="theme-color" content="#0b0b0e"> 
 
     <!-- ===== OPEN GRAPH ===== -->
     <meta property="og:title" content="YaKa.SPEECH — студия веб-разработки">
@@ -34,24 +35,20 @@
 
     <!-- ===== МИКРОРАЗМЕТКА JSON-LD ===== -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Разработка сайтов под ключ",
+    "description": "Создаём лендинги, интернет-магазины и корпоративные сайты.",
+    "provider": {
         "@type": "Organization",
         "name": "YaKa.SPEECH",
-        "description": "Студия веб-разработки. Создаём сайты, которые продают.",
-        "url": "https://yakaspeech.ru",
-        "email": "yaka.speech@mail.ru",
-        "telephone": "+7 (999) 123-45-67",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "RU"
-        },
-        "areaServed": {
-            "@type": "Country",
-            "name": "Россия"
-        }
-    }
-    </script>
+        "url": "https://yakaspeech.netlify.app"
+    },
+    "areaServed": "Россия",
+    "priceRange": "от 15 000 ₽"
+}
+</script>
 
     <!-- ===== ПОДКЛЮЧАЕМЫЕ СТИЛИ ===== -->
     <link rel="stylesheet" href="style.css">
@@ -81,25 +78,28 @@
             </ul>
         </nav>
 
-        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-        </button>
+        <div class="header-contacts">
+    <a href="tel:+79635070037" class="header-phone">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <span>+7 (963) 507-00-37</span>
+    </a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+</div>
     </header>
 
     <!-- ===== ГЕРОЙ ===== -->
     <section class="hero" aria-labelledby="hero-title">
-    <!-- Декоративные кольца -->
-    <span class="ring-1"></span>
-    <span class="ring-2"></span>
-    <span class="ring-3"></span>
-    
-    <!-- Контент -->
-    <div class="hero-content">
-        <h1 id="hero-title">Дизайн, который <span class="accent">звучит</span></h1>
-        <p>Создаём сайты, которые продают.</p>
-        <a href="#contact" class="btn">Обсудить проект</a>
-    </div>
-</section>
+        <span class="ring-1"></span>
+        <span class="ring-2"></span>
+        <span class="ring-3"></span>
+        <div class="hero-content">
+            <h1 id="hero-title">Дизайн, который <span class="accent">звучит</span></h1>
+            <p>Создаём сайты, которые продают.</p>
+            <a href="#contact" class="btn">Обсудить проект</a>
+        </div>
+    </section>
 
     <!-- ===== О НАС ===== -->
     <section id="about" aria-labelledby="about-title">
@@ -129,19 +129,16 @@
                 <h3>Разработка под ключ</h3>
                 <p>Полный цикл: от идеи до запущенного сайта</p>
             </div>
-
             <div class="service-card">
                 <span class="card-number">02</span>
                 <h3>Адаптация и оптимизация</h3>
                 <p>Приводим существующие сайты к современным стандартам</p>
             </div>
-
             <div class="service-card">
                 <span class="card-number">03</span>
                 <h3>Редизайн</h3>
                 <p>Обновляем внешность и структуру под задачи бизнеса</p>
             </div>
-
             <div class="service-card">
                 <span class="card-number">04</span>
                 <h3>Техподдержка</h3>
@@ -156,10 +153,7 @@
         <p class="section-subtitle">Реализованные проекты</p>
 
         <div class="works-carousel-wrapper">
-
             <div class="works-carousel">
-
-                <!-- Проект 1: TravelCo -->
                 <div class="work-card active" data-index="0">
                     <div class="video-wrapper">
                         <video autoplay muted loop playsinline>
@@ -176,8 +170,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Проект 2: FitStore -->
                 <div class="work-card" data-index="1">
                     <div class="video-wrapper">
                         <video autoplay muted loop playsinline>
@@ -194,8 +186,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Проект 3: EDU PRO -->
                 <div class="work-card" data-index="2">
                     <div class="video-wrapper">
                         <video autoplay muted loop playsinline>
@@ -212,7 +202,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
 
             <button class="carousel-btn prev" aria-label="Предыдущий проект">
@@ -221,7 +210,6 @@
             <button class="carousel-btn next" aria-label="Следующий проект">
                 <i class="fas fa-chevron-right" aria-hidden="true"></i>
             </button>
-
         </div>
 
         <div class="carousel-dots" role="tablist" aria-label="Навигация по проектам">
@@ -233,63 +221,54 @@
 
     <!-- ===== КОНТАКТЫ ===== -->
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
-        <h2 class="section-title" id="contact-title">Свяжитесь <span>с нами</span></h2>
-        <p class="section-subtitle">Обсудим ваш проект</p>
+    <h2 class="section-title" id="contact-title">Свяжитесь <span>с нами</span></h2>
+    <p class="section-subtitle">Выберите удобный способ</p>
 
-        <div class="contact-wrapper">
-            <address class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:yaka.speech@mail.ru">yaka.speech@mail.ru</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone" aria-hidden="true"></i>
-                    <a href="tel:+79635070037">+7 (963) 507-00-37</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                    <a href="tel:+79635070037">+7 (963) 507-00-37</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-vk" aria-hidden="true"></i>
-                    <a href="https://vk.ru/club241269877" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
-                </div>
-            </address>
+    <div class="contact-buttons">
+        <a href="tel:+79635070037" class="contact-btn phone">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <span>Позвонить</span>
+            <small>+7 (963) 507-00-37</small>
+        </a>
+        <a href="https://wa.me/79635070037" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span>Написать</span>
+            <small>WhatsApp</small>
+        </a>
+        <a href="https://vk.ru/club241269877" target="_blank" rel="noopener noreferrer" class="contact-btn vk">
+            <i class="fab fa-vk" aria-hidden="true"></i>
+            <span>ВКонтакте</span>
+            <small>Сообщество</small>
+        </a>
+        <a href="mailto:yaka.speech@mail.ru" class="contact-btn email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>Написать</span>
+            <small>yaka.speech@mail.ru</small>
+        </a>
+    </div>
+</section>
 
-            <div class="contact-form">
-                <h3>Оставить заявку</h3>
-                <form name="contact" netlify netlify-honeypot="bot-field" novalidate>
-                    <p class="hidden" style="display:none;">
-                        <label>Не заполняйте это поле: <input name="bot-field"></label>
-                    </p>
-                    <input type="hidden" name="form-name" value="contact">
-                    <div class="form-group">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">О проекте</label>
-                        <textarea id="message" name="message" placeholder="Расскажите, что нужно сделать..." rows="4"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn" id="formSubmit">Отправить</button>
-                    <p id="form-success" style="display: none;"></p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== ФУТЕР ===== -->
     <footer class="footer" role="contentinfo">
-        <p>&copy; 2026 YaKa.SPEECH. Все права защищены.</p>
-    </footer>
+    <div class="footer-socials">
+        <a href="https://wa.me/79635070037" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://vk.ru/club241269877" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+            <i class="fab fa-vk"></i>
+        </a>
+        <a href="mailto:yaka.speech@mail.ru" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
 
+    <div class="footer-links">
+        <a href="/politika.html">Политика конфиденциальности</a>
+        <a href="/terms.html">Условия использования</a>
+        <a href="/dogovor.html">Документы</a>
+    </div>
+
+    <p>&copy; 2026 YaKa.SPEECH. Все права защищены.</p>
+</footer>
     <!-- ===== СКРИПТЫ ===== -->
     <script src="script.js"></script>
 </body>

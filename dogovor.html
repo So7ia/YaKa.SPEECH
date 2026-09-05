@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Договор — YaKa.SPEECH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #121218;
+            color: #e8e4de;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.02);
+            padding: 48px 56px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.04);
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #c9a84c;
+            margin-bottom: 8px;
+        }
+        .sub {
+            color: rgba(232,228,222,0.4);
+            font-size: 15px;
+            margin-bottom: 32px;
+        }
+        .doc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .doc-btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: rgba(201,168,76,0.08);
+            border: 1px solid rgba(201,168,76,0.2);
+            border-radius: 8px;
+            color: #c9a84c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .doc-btn:hover {
+            background: rgba(201,168,76,0.12);
+            border-color: #c9a84c;
+            transform: translateY(-2px);
+        }
+        .doc-btn i {
+            margin-right: 10px;
+        }
+        .back {
+            display: inline-block;
+            margin-top: 32px;
+            color: #c9a84c;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        .back:hover {
+            color: #dbb95c;
+        }
+        @media (max-width: 576px) {
+            .container { padding: 24px 20px; }
+            h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Документы и договоры</h1>
+        <p class="sub">Скачайте нужные документы для сотрудничества</p>
+
+        <div class="doc-list">
+            <a href="Dokumenty/YaKa.SPEECH_dogovor.docx" download class="doc-btn">
+                <i class="fas fa-file-contract"></i> Договор на разработку сайта (Word)
+            </a>
+            <a href="Dokumenty/YaKa.SPEECH_dogovor.pdf" download class="doc-btn">
+                <i class="fas fa-file-pdf"></i> Договор на разработку сайта (PDF)
+            </a>
+            <a href="Dokumenty/YaKa.SPEECH_brief.docx" download class="doc-btn">
+                <i class="fas fa-file-alt"></i> Бриф на разработку (Word)
+            </a>
+        </div>
+
+        <p style="color:rgba(232,228,222,0.3); font-size:14px;">Файлы откроются в новой вкладке или скачаются на ваш компьютер</p>
+
+        <a href="/" class="back">← Вернуться на сайт</a>
+    </div>
+</body>
+</html>
